@@ -25,7 +25,7 @@ new_img = np.zeros(gray.shape)
 #kernel = [[0.1,0.1,0.1],[0.1,0.1,0.1],[0.1,0.1,0.1]]
 for i in range(1, row-1):
     for j in range(1, col-1):
-        kernel = [[1,1,1],[1,1,1],[1,1,1]]#Kernel de la imagen
+        kernel = [[2,4,5,4,2],[4,9,12,9,4],[5,12,15,12,5],[4,9,12,9,4],[2,4,5,4,2]]#Kernel de la imagen
         count = 0
         for y in range(3):
             for x in range(3):  
